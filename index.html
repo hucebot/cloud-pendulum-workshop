@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   CloudPendulum Workshop · 24–25 November 2026 · Nancy
+  </title>
+  <meta content="Education and Research Using CloudPendulum Technology. A hands-on robotics workshop, 24–25 November 2026 at Inria in Nancy, France, with remote participation. Sponsored by euROBIN." name="description"/>
+  <meta content="#183f39" name="theme-color"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Education and Research Using CloudPendulum Technology" property="og:title"/>
+  <meta content="Two days of robotics, optimal control and learning on real hardware. 24–25 November 2026 · Nancy, France + online." property="og:description"/>
+  <meta content="static/images/workshop/double-pendulum.jpg" property="og:image"/>
+  <meta content="CloudPendulum double-pendulum hardware at Chalmers" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <link href="static/images/workshop/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="static/css/index.css?v=5bf7119457" rel="stylesheet"/>
+  <script defer="" src="static/js/index.js">
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"EducationEvent","name":"Education and Research Using CloudPendulum Technology","startDate":"2026-11-24T09:00:00+01:00","endDate":"2026-11-25T16:00:00+01:00","eventAttendanceMode":"https://schema.org/MixedEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":[{"@type":"Place","name":"Centre Inria de l’Université de Lorraine — Bâtiment Ada Lovelace, Salle C103 Bertrand Schwartz","address":{"@type":"PostalAddress","streetAddress":"615 Rue du Jardin-Botanique","postalCode":"54600","addressLocality":"Villers-lès-Nancy","addressCountry":"FR"}},{"@type":"VirtualLocation","url":"https://visio.numerique.gouv.fr/ezx-wjxi-pai"}],"organizer":[{"@type":"Person","name":"Enrico Mingo Hoffman"},{"@type":"Person","name":"Fabio Amadio"}],"sponsor":{"@type":"Organization","name":"euROBIN","url":"https://www.eurobin-project.eu/"}}
+  </script>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-nav">
+   <div class="shell nav-inner">
+    <a aria-label="CloudPendulum workshop home" class="wordmark" href="#top">
+     <svg aria-hidden="true" viewBox="0 0 36 36">
+      <path d="M6 6h24M18 6v9l10 13">
+      </path>
+      <circle cx="18" cy="15" r="3">
+      </circle>
+      <circle cx="28" cy="28" r="4">
+      </circle>
+     </svg>
+     <span>
+      CloudPendulum
+      <span class="wordmark-sub">
+       WORKSHOP / 2026
+      </span>
+     </span>
+    </a>
+    <button aria-controls="nav-links" aria-expanded="false" class="menu-toggle">
+     Menu
+     <span aria-hidden="true">
+      ☰
+     </span>
+    </button>
+    <nav aria-label="Main navigation" class="nav-links" id="nav-links">
+     <a href="#about">
+      About
+     </a>
+     <a href="#programme">
+      Programme
+     </a>
+     <a href="#venue">
+      Venue
+     </a>
+     <a href="#people">
+      Organisers
+     </a>
+     <a class="nav-register" href="#register">
+      Register
+      <span aria-hidden="true">
+       ↗
+      </span>
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main">
+   <section class="hero" id="top">
+    <div class="shell hero-grid">
+     <div class="hero-copy">
+      <p class="eyebrow">
+       <span class="status-dot">
+       </span>
+       A euROBIN scientific workshop
+      </p>
+      <h1>
+       Education and Research Using
+       <span>
+        CloudPendulum
+       </span>
+       Technology
+      </h1>
+      <p class="hero-lead">
+       A hands-on introduction to CloudPendulum for teaching and research, with applications in optimal control and reinforcement learning.
+      </p>
+      <div class="hero-meta">
+       <p>
+        <span class="meta-label">
+         WHEN
+        </span>
+        <strong>
+         24–25 November 2026
+        </strong>
+       </p>
+       <p>
+        <span class="meta-label">
+         WHERE
+        </span>
+        <strong>
+         Nancy, France
+         <span class="online">
+          + online
+         </span>
+        </strong>
+       </p>
+      </div>
+      <div class="actions">
+       <a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdswkzM1Gg-r0VH1p3R3tckln7K59PMp7tKbvQ41ExTj1ISKA/viewform?usp=sharing&amp;ouid=116862836182289163330" rel="noopener noreferrer" target="_blank">
+        Register for the workshop
+        <span aria-hidden="true">
+         ↗
+        </span>
+       </a>
+       <a class="text-link" href="#programme">
+        Programme ↓
+       </a>
+      </div>
+      <p class="hero-note">
+       All backgrounds welcome. Places are limited.
+      </p>
+     </div>
+     <figure class="hero-visual">
+      <img alt="CloudPendulum double pendulum inside its aluminium experimental frame at Chalmers" fetchpriority="high" height="1280" src="static/images/workshop/double-pendulum.jpg" width="960"/>
+      <figcaption>
+       <strong>
+        Double pendulum
+       </strong>
+       <span>
+        Chalmers University of Technology
+       </span>
+      </figcaption>
+     </figure>
+    </div>
+   </section>
+   <div class="partners">
+    <div class="shell partner-inner">
+     <a aria-label="euROBIN, workshop sponsor" href="https://www.eurobin-project.eu/" rel="noopener noreferrer" target="_blank">
+      <img alt="euROBIN" class="eurobin-logo" src="static/images/workshop/eurobin-logo.png"/>
+     </a>
+     <a href="https://www.inria.fr/fr/centre-inria-universite-lorraine" rel="noopener noreferrer" target="_blank">
+      <img alt="Inria" class="inria-logo" src="static/images/workshop/inria-logo.svg"/>
+     </a>
+     <a href="https://www.chalmers.se/en/" rel="noopener noreferrer" target="_blank">
+      <img alt="Chalmers University of Technology" class="chalmers-logo" src="static/images/workshop/chalmers-logo.png"/>
+     </a>
+     <a href="https://cloudpendulum.m2.chalmers.se/onboarding/" rel="noopener noreferrer" target="_blank">
+      <img alt="CloudPendulum" class="cp-logo" src="static/images/workshop/cloudpendulum-logo.png"/>
+     </a>
+    </div>
+   </div>
+   <section class="section shell about-section" id="about">
+    <h2>
+     About the workshop
+    </h2>
+    <div class="about-copy">
+     <p>
+      CloudPendulum is an initiative at Chalmers University of Technology developing canonical underactuated robotic systems, including simple and double pendulums. These desk-sized systems provide high-frequency position, velocity, and torque control. A cloud service provides 24/7 access to multiple platforms.
+     </p>
+     <p>
+      Participants will work with the physical hardware and its cloud-based counterparts. Hands-on sessions cover optimal control and reinforcement learning, from simulation to real robots, both locally and through the cloud.
+     </p>
+     <a class="text-link" href="https://cloudpendulum.m2.chalmers.se/onboarding/" rel="noopener noreferrer" target="_blank">
+      CloudPendulum documentation ↗
+     </a>
+    </div>
+   </section>
+   <section aria-labelledby="speakers-title" class="section shell speakers-section" id="speakers">
+    <div class="section-heading">
+     <h2 id="speakers-title">
+      Invited speakers
+     </h2>
+    </div>
+    <div class="speaker-grid">
+     <article>
+      <h3>
+       <a href="https://www.chalmers.se/en/persons/shivesh/" rel="noopener noreferrer" target="_blank">
+        Shivesh Kumar ↗
+       </a>
+      </h3>
+      <p>
+       Chalmers University of Technology
+      </p>
+     </article>
+     <article>
+      <h3>
+       <a href="https://costashatz.github.io/" rel="noopener noreferrer" target="_blank">
+        Konstantinos Chatzilygeroudis ↗
+       </a>
+      </h3>
+      <p>
+       University of Patras
+      </p>
+     </article>
+     <article>
+      <h3>
+       <a href="https://shubhamvyas.me/" rel="noopener noreferrer" target="_blank">
+        Shubham Vyas ↗
+       </a>
+      </h3>
+      <p>
+       DFKI
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="programme-section section" id="programme">
+    <div class="shell">
+     <div class="section-heading">
+      <div>
+       <h2>
+        Programme
+       </h2>
+      </div>
+      <p>
+       Tentative schedule · All times CET (UTC+1)
+      </p>
+     </div>
+     <div class="programme-grid">
+      <article class="day">
+       <header class="day-heading">
+        <span class="day-number">
+         24
+        </span>
+        <div>
+         <p>
+          Tuesday · November 2026
+         </p>
+         <h3>
+          Day 1
+         </h3>
+        </div>
+       </header>
+       <ol class="schedule">
+        <li>
+         <time>
+          09:00–10:00
+         </time>
+         <div>
+          <h4>
+           Welcome
+          </h4>
+         </div>
+        </li>
+        <li>
+         <time>
+          10:00–12:00
+         </time>
+         <div>
+          <span class="session-type">
+           INTRODUCTION
+          </span>
+          <h4>
+           Introduction and overview of the CloudPendulum system
+          </h4>
+          <p>
+           Shivesh Kumar · Chalmers University of Technology
+          </p>
+         </div>
+        </li>
+        <li class="break">
+         <time>
+          12:00–13:00
+         </time>
+         <div>
+          <h4>
+           Lunch break
+          </h4>
+          <p>
+           Registration on the CloudPendulum platform
+          </p>
+         </div>
+        </li>
+        <li>
+         <time>
+          13:00–15:00
+         </time>
+         <div>
+          <span class="session-type">
+           HANDS-ON · PART 1
+          </span>
+          <h4>
+           CloudPendulum and real hardware
+          </h4>
+         </div>
+        </li>
+        <li>
+         <time>
+          15:00–17:00
+         </time>
+         <div>
+          <span class="session-type">
+           HANDS-ON · PART 2
+          </span>
+          <h4>
+           CloudPendulum and real hardware
+          </h4>
+         </div>
+        </li>
+        <li class="dinner">
+         <time>
+          19:30
+         </time>
+         <div>
+          <h4>
+           Social dinner
+          </h4>
+         </div>
+        </li>
+       </ol>
+      </article>
+      <article class="day">
+       <header class="day-heading">
+        <span class="day-number">
+         25
+        </span>
+        <div>
+         <p>
+          Wednesday · November 2026
+         </p>
+         <h3>
+          Day 2
+         </h3>
+        </div>
+       </header>
+       <ol class="schedule">
+        <li>
+         <time>
+          09:00–10:00
+         </time>
+         <div>
+          <span class="session-type">
+           HANDS-ON · PART 3
+          </span>
+          <h4>
+           CloudPendulum and real hardware
+          </h4>
+         </div>
+        </li>
+        <li>
+         <time>
+          10:00–11:00
+         </time>
+         <div>
+          <span class="session-type">
+           INVITED TALK
+          </span>
+          <h4>
+           Real Time Model Predictive Control for Pendubot Swing Up
+          </h4>
+          <p>
+           Konstantinos Chatzilygeroudis · University of Patras
+          </p>
+         </div>
+        </li>
+        <li>
+         <time>
+          11:00–12:00
+         </time>
+         <div>
+          <span class="session-type">
+           INVITED TALK
+          </span>
+          <h4>
+           RealAIGym: Education and Research Platform for Studying Athletic Intelligence
+          </h4>
+          <p>
+           Dr. Shubham Vyas · DFKI
+          </p>
+         </div>
+        </li>
+        <li class="break">
+         <time>
+          12:00–13:30
+         </time>
+         <div>
+          <h4>
+           Lunch break
+          </h4>
+         </div>
+        </li>
+        <li>
+         <time>
+          13:30–16:00
+         </time>
+         <div>
+          <span class="session-type">
+           WRAP-UP &amp; PRACTICALS
+          </span>
+          <h4>
+           Closing remarks and continued experimentation
+          </h4>
+          <p>
+           Continuation of practicals for in-person participants.
+          </p>
+         </div>
+        </li>
+       </ol>
+      </article>
+     </div>
+     <p class="programme-note">
+      Hands-on sessions include optimal control and reinforcement learning on real hardware.
+     </p>
+    </div>
+   </section>
+   <section class="section shell" id="venue">
+    <div class="section-heading">
+     <div>
+      <h2>
+       Venue and remote participation
+      </h2>
+     </div>
+    </div>
+    <div class="venue-grid">
+     <article class="venue-card">
+      <span class="venue-tag">
+       IN PERSON
+      </span>
+      <h3>
+       Inria Nancy
+      </h3>
+      <p class="venue-name">
+       <a href="https://www.inria.fr/fr/centre-inria-universite-lorraine" rel="noopener noreferrer" target="_blank">
+        Centre Inria de l’Université de Lorraine ↗
+       </a>
+      </p>
+      <address>
+       Bâtiment Ada Lovelace
+       <br/>
+       615 Rue du Jardin-Botanique
+       <br/>
+       54600 Villers-lès-Nancy, France
+      </address>
+      <p class="room">
+       <span>
+        ROOM
+       </span>
+       <strong>
+        C103 · Bertrand Schwartz
+       </strong>
+      </p>
+      <a class="text-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4794a279f38e6957:0xc0f057fa1a5706d7?sa=X&amp;ved=1t:8290&amp;ictx=111" rel="noopener noreferrer" target="_blank">
+       Get directions on Google Maps ↗
+      </a>
+     </article>
+     <article class="venue-card remote-card">
+      <span class="venue-tag">
+       REMOTE PARTICIPATION
+      </span>
+      <div class="remote-symbol">
+       <img alt="Visio" height="65" loading="lazy" src="static/images/workshop/visio-logo.svg" width="169"/>
+      </div>
+      <h3>
+       Videoconference
+      </h3>
+      <p>
+       Remote participation is available through the workshop videoconference.
+      </p>
+      <a class="button button-outline" href="https://visio.numerique.gouv.fr/ezx-wjxi-pai" rel="noopener noreferrer" target="_blank">
+       Join the videoconference
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <p class="small-note">
+       24–25 November · Programme times are in CET.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="people-section section" id="people">
+    <div class="shell">
+     <div class="section-heading">
+      <div>
+       <h2>
+        Organisers
+       </h2>
+      </div>
+     </div>
+     <div class="people-grid">
+      <div class="people-group">
+       <h3>
+        Organisers
+       </h3>
+       <p>
+        <a href="https://members.loria.fr/EMingoHoffman/" rel="noopener noreferrer" target="_blank">
+         Enrico Mingo Hoffman
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </a>
+       </p>
+       <p>
+        <a href="https://team.inria.fr/hucebot/team/fabio-amadio/" rel="noopener noreferrer" target="_blank">
+         Fabio Amadio
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </a>
+       </p>
+      </div>
+      <div class="people-group">
+       <h3>
+        Co-organisers
+       </h3>
+       <p>
+        <a href="https://itsikelis.github.io/" rel="noopener noreferrer" target="_blank">
+         Ioannis Tsikelis
+         <span aria-hidden="true">
+          ↗
+         </span>
+        </a>
+       </p>
+       <p>
+        <a href="https://www.chalmers.se/en/persons/shivesh/" rel="noopener noreferrer" target="_blank">
+         Shivesh Kumar ↗
+        </a>
+       </p>
+      </div>
+      <div class="sponsor-copy">
+       <p class="eyebrow">
+        Sponsored by euROBIN
+       </p>
+       <p>
+        euROBIN is a European network of excellence in robotics supporting collaboration between research institutions.
+       </p>
+       <a class="text-link" href="https://www.eurobin-project.eu/" rel="noopener noreferrer" target="_blank">
+        About the project ↗
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="registration-section" id="register">
+    <div class="shell registration-inner">
+     <div>
+      <h2>
+       Registration
+      </h2>
+      <p>
+       The workshop is open to everyone, regardless of background or level of expertise.
+      </p>
+     </div>
+     <div class="registration-action">
+      <a class="button button-light" href="https://docs.google.com/forms/d/e/1FAIpQLSdswkzM1Gg-r0VH1p3R3tckln7K59PMp7tKbvQ41ExTj1ISKA/viewform?usp=sharing&amp;ouid=116862836182289163330" rel="noopener noreferrer" target="_blank">
+       Register via Google Forms
+       <span aria-hidden="true">
+        ↗
+       </span>
+      </a>
+      <p>
+       Places are limited and allocated on a
+       <br/>
+       first-come, first-served basis.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer shell">
+   <div>
+    <strong>
+     CloudPendulum Workshop 2026
+    </strong>
+    <p>
+     24–25 November · Nancy, France + online
+    </p>
+   </div>
+   <p>
+    Education &amp; Research / euROBIN
+    <br/>
+    <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" rel="noopener noreferrer" target="_blank">
+     Adapted from Academic Project Page Template
+    </a>
+   </p>
+   <a class="back-top" href="#top">
+    Back to top ↑
+   </a>
+  </footer>
+ </body>
+</html>

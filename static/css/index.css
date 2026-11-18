@@ -456,6 +456,9 @@ h2 {
   grid-template-columns:94px 1fr;
   gap:12px;
   padding:23px 25px;
+  background:var(--session-background,var(--paper));
+  color:var(--ink);
+  border-inline-start:3px solid var(--session-accent,var(--line));
   border-bottom:1px solid var(--line)
 }
 .schedule li:last-child {
@@ -470,7 +473,7 @@ h2 {
 }
 .schedule h4 {
   font-size:13px;
-  font-weight:600;
+  font-weight:var(--session-weight,600);
   line-height:1.55;
   letter-spacing:-.15px
 }
@@ -484,19 +487,25 @@ h2 {
   display:block;
   font-size:8px;
   letter-spacing:1.1px;
-  font-weight:700;
-  color:#536b38;
+  font-weight:600;
+  color:var(--muted);
   margin-bottom:7px
 }
-.schedule .break {
-  background:#f0f2eb;
-  color:#5b6b5c
+.schedule .session-course {
+  --session-background:#edf4e9;
+  --session-accent:#587a43;
 }
-.schedule .break h4 {
-  font-weight:500
+.schedule .session-talk {
+  --session-background:#eaf0f8;
+  --session-accent:#42658a;
 }
-.schedule .dinner {
-  background:#e8eddf
+.schedule .session-break {
+  --session-background:#f1f1ed;
+  --session-accent:#93998e;
+  --session-weight:500;
+}
+.schedule .session-type {
+  color:var(--session-accent);
 }
 .programme-note {
   font-size:14px;

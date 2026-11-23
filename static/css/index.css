@@ -411,6 +411,8 @@ h2 {
   gap:32px
 }
 .day {
+  display:flex;
+  flex-direction:column;
   background:var(--paper);
   border:1px solid #d4ddcf;
   border-radius:4px;
@@ -447,12 +449,17 @@ h2 {
   white-space:nowrap
 }
 .schedule {
+  display:flex;
+  flex:1;
+  flex-direction:column;
   margin:0;
   padding:0;
   list-style:none
 }
 .schedule li {
   display:grid;
+  flex-grow:1;
+  align-content:center;
   grid-template-columns:94px 1fr;
   gap:12px;
   padding:23px 25px;
